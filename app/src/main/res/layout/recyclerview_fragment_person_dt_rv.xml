@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:id="@+id/fragment_sy_other_lv_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_person_dt_iv_touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/fragment_person_dt_iv_touxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_person_dt_tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="匿名用户"
+                android:textColor="#343434"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fragment_person_dt_tv_c_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="发布: 2018/10/10 09:51" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fragment_sy_other_lv_more"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/more" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_sy_other_lv_rl"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_person_dt_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手太小，钢琴根本玩不来啊！你们是不是也是啊，还有什么好用的乐器。"
+            android:textColor="#2C2C2C" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_person_dt_rv_biaoqian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <cn.jzvd.JZVideoPlayerStandard
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:id="@+id/fragment_person_dt_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <com.example.administrator.kcapp.view.ninegridview.NineGridTestLayout
+            android:id="@+id/fragment_person_dt_ninegrid"
+            android:layout_below="@+id/user_name"
+            app:oneImageWidth="240dp"
+            app:oneImageHeight="150dp"
+            android:layout_toRightOf="@+id/user_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content">
+        </com.example.administrator.kcapp.view.ninegridview.NineGridTestLayout>
+
+        <!--<LinearLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/fragment_sy_other_lv_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#EAEAEA"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/fragment_sy_other_lv_iv"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/img2" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/fragment_sy_other_lv_title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:lines="2"-->
+                    <!--android:text="钢琴曲新手入门:键位(一)"-->
+                    <!--android:textColor="#2E2E2E"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/fragment_sy_other_lv_biaoqian"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:text="#创意"-->
+                    <!--android:textColor="#8C8C8C"-->
+                    <!--android:textSize="13sp" />-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_marginTop="8dp"
+            android:background="#E6E6E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

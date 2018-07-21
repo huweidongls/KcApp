@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('D:/AndroidStudioProjects/KcApp/kcapp.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.example.administrator.kcapp"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':searchview')
+    compile project(':jiaozivideoplayer')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //没有使用特殊Header，可以不加这行
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-6'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-6'
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    compile 'com.github.1002326270xc:LayoutManager-FlowLayout:v1.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.vise.xiaoyaoyou:xsnow:2.1.9'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.sh.shvideo:shvideolibrary:1.5.0'
+    compile 'com.qiniu:qiniu-android-sdk:7.3.+'
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    compile 'com.github.donkingliang:ImageSelector:1.6.0'
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    compile 'com.github.dueeeke.dkplayer:dkplayer-java:2.5.1'
+    compile 'com.github.dueeeke.dkplayer:dkplayer-armv7a:2.5.1'
+    compile 'com.github.dueeeke.dkplayer:dkplayer-armv5:2.5.1'
+    compile 'com.github.dueeeke.dkplayer:dkplayer-arm64:2.5.1'
+    compile 'com.github.dueeeke.dkplayer:dkplayer-x86:2.5.1'
+    compile 'com.github.dueeeke.dkplayer:dkplayer-x86_64:2.5.1'
+    compile 'com.github.dueeeke.dkplayer:dkplayer-ui:2.5.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+}

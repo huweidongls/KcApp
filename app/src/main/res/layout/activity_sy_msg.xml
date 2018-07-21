@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.kcapp.activity.SyMsgActivity">
+
+    <RelativeLayout
+        android:background="#FDFDFD"
+        android:id="@+id/activity_sy_msg_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height">
+
+        <RelativeLayout
+            android:id="@+id/activity_sy_msg_back"
+            android:layout_width="@dimen/top_title_height"
+            android:layout_height="@dimen/top_title_height">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/top_title_text_size"
+            android:textColor="#343434"
+            android:textStyle="bold"
+            android:text="消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:divider="@null"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:layout_below="@+id/activity_sy_msg_rl"
+        android:id="@+id/activity_sy_msg_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>

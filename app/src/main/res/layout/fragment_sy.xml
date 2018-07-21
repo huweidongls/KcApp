@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:background="#f6f6f6"
+        android:id="@+id/fragment_sy_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/fragment_sy_iv_top"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logofenlei"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <android.support.design.widget.TabLayout
+            app:tabBackground="@null"
+            android:layout_toRightOf="@+id/fragment_sy_iv_top"
+            android:layout_toLeftOf="@+id/fragment_sy_iv_msg"
+            android:id="@+id/fragment_sy_tl_tab"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabIndicatorColor="#343434"
+            app:tabSelectedTextColor="#343434"
+            app:tabTextColor="#949494"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/fragment_sy_iv_msg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/msg2"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/fragment_sy_ll_top"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <ImageView
+        android:id="@+id/fragment_sy_fb"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/sy_fb"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

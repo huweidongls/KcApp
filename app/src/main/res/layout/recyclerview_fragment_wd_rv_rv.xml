@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/wd_qx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fragment_wd_rv_rv_img"
+            android:src="@drawable/wd_tjkc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fragment_wd_rv_rv_img"
+            android:id="@+id/fragment_wd_rv_rv_text"
+            android:textColor="#333333"
+            android:text="钢琴课"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fragment_wd_rv_rv_text"
+            android:id="@+id/fragment_wd_rv_rv_money"
+            android:textColor="#333333"
+            android:text="¥ 2000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@drawable/bg_fragment_wd_rv_rv_chakan"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fragment_wd_rv_rv_money"
+            android:id="@+id/fragment_wd_rv_rv_chakan"
+            android:layout_marginBottom="5dp"
+            android:textColor="#333333"
+            android:text="查看"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.kcapp.activity.ShipinXqActivity">
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/activity_shipin_vp"
+        android:layout_above="@+id/activity_shipin_xq_p_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></cn.jzvd.JZVideoPlayerStandard>
+
+    <LinearLayout
+        android:id="@+id/activity_shipin_xq_p_ll"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:background="#3D3B48"
+        android:layout_above="@+id/activity_shipin_xq_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_shipin_xq_tv_title"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="超级实用的旅游日语旅行日本常用语言"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:text="#文学/生活/10:48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <View
+                android:layout_marginTop="5dp"
+                android:background="#787683"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/activity_shipin_xq_tv_content"
+            android:layout_marginTop="5dp"
+            android:text="对于任何热爱旅游的人来说都是终极梦想，一旦开始运动，就永远不会停止。本视频作者想出了一大堆理论上可能实现的计划，并设计和只做其中的一些动画。"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/activity_shipin_xq_heart"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/heart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#ffffff"
+                    android:text="120"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_shipin_xq_p"
+                android:layout_toRightOf="@+id/activity_shipin_xq_heart"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/shipin_pl"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/activity_shipin_xq_tv_comment"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#ffffff"
+                    android:text="120"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/activity_shipin_xq_p"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/zan2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/activity_shipin_xq_tv_praise"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#ffffff"
+                    android:text="120"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/activity_shipin_xq_fenxiang"
+                android:src="@drawable/shipin_fx"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="8dp"
+            android:background="#777582"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_shipin_xq_bottom_rl"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="#3D3B48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/activity_shipin_xq_touxiang"
+            android:src="@drawable/touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/activity_shipin_xq_guanzhu"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/activity_shipin_xq_touxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:text="飞了的一只猪"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:text="精选生活"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/activity_shipin_xq_guanzhu"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/bg_activity_shipin_xq_guanzhu"
+            android:text="+关注"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

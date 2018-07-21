@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/fragment_gz_zp_recyclerview_img"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>

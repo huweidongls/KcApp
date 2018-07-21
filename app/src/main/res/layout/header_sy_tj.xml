@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/fragment_sy_tj_lv_header_rl_sousuo"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:background="@drawable/bg_fragment_sy_tj_sousuo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp">-->
+
+        <!--<ImageView-->
+            <!--android:layout_marginRight="3dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/fragment_sy_tj_lv_header_tv_sousuo"-->
+            <!--android:src="@drawable/sousuo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/fragment_sy_tj_lv_header_tv_sousuo"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textColor="#D5D5D5"-->
+            <!--android:text="搜索专题、名字等关键词"-->
+            <!--android:textSize="13sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#888888"
+        android:text="the great spirit video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/fragment_sy_tj_lv_header_jingxuan"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#313131"
+            android:text="牛人牛事热门精选"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/more"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="10dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="#343434"
+        android:text="社区分类"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

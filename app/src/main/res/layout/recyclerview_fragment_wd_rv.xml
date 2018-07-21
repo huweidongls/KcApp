@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/fragment_wd_rv_rl"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/fragment_wd_rv_img"
+            android:src="@drawable/wd_dd"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:id="@+id/fragment_wd_rv_tv"
+            android:layout_toRightOf="@+id/fragment_wd_rv_img"
+            android:layout_centerVertical="true"
+            android:text="我的订单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/fragment_wd_rv_more"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/fragment_wd_rv_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/daifukuan"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/daikaike"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/yikaike"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/daipingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/tuikuan"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/fragment_wd_rv_ll1"
+        android:background="#F8F8F8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/fragment_wd_rv_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

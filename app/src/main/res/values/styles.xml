@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <!--  控制popuWindow显示和隐藏 -->
+    <!--  这个是加入的代码 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophiden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!-- popup window 显示消失动画-->
+    <style name="PopWindowAnimStyle">
+        <item name="android:windowShowAnimation">@anim/dialog_enter</item>
+        <!-- 指定显示的动画xml  -->
+        <item name="android:windowHideAnimation">@anim/dialog_exit</item>
+        <!-- 指定消失的动画xml  -->
+    </style>
+
+    <!-- my loading dialog -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--<style name="Anim_photo" parent="AppTheme">-->
+        <!--<item name="android:windowAnimationStyle">@style/fade</item>-->
+    <!--</style>-->
+    <!--<style name="fade" parent="@android:style/Animation">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/photoview_open</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/photoview_close</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/photoview_open</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/photoview_close</item>-->
+    <!--</style>-->
+    <!--<style name="photoView_anim">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/photoview_open</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/photoview_close</item>-->
+    <!--</style>-->
+
+</resources>

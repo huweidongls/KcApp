@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pop_niuren_comment_rl_fbpl"
+        android:background="#666666"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pop_niuren_comment_iv_touxiang"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/touxiang"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pop_niuren_comment_iv_touxiang"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:text="发表你的评论"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/pop_niuren_comment_iv_back"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/w_qx"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:text="热门评论 >"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    
+    <android.support.v7.widget.RecyclerView
+        android:background="#ffffff"
+        android:id="@+id/pop_niuren_comment_rv_pl"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"/>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context="com.example.administrator.kcapp.activity.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <RelativeLayout
+                android:id="@+id/activity_register_rl_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logodenglu"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="#525051"
+                android:layout_gravity="center_horizontal"
+                android:text="登录爱教育APP，即可关注"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#525051"
+                android:layout_gravity="center_horizontal"
+                android:text="老师，发表评论，同步分享自己的学习日常"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/shouji"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/activity_register_et_phonenum"
+                android:textSize="16sp"
+                android:hint="请输入手机号"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/activity_register_iv_yanzhengma"
+                android:layout_centerVertical="true"
+                android:src="@drawable/yanzhengma"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_toLeftOf="@+id/activity_register_btn_yanzhengma"
+                android:id="@+id/activity_register_et_yanzhengma"
+                android:layout_toRightOf="@+id/activity_register_iv_yanzhengma"
+                android:textSize="16sp"
+                android:hint="请输入验证码"
+                android:background="#00ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            
+            <com.example.administrator.kcapp.view.CountDownTimerButton
+                android:textColor="#ffffff"
+                android:text="获取验证码"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/activity_register_btn_yanzhengma"
+                android:layout_width="120dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/activity_register_btn_login"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_activity_login_btn"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="注册并登录"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

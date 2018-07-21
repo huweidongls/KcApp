@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_qx"
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:text="X"/>
+
+        <Button
+            android:background="#ffffff"
+            android:layout_alignParentRight="true"
+            android:id="@+id/submit_comment"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="提交" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="top"
+        android:textSize="15sp"
+        android:hint="请输入你的评论..."
+        android:lines="5"
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

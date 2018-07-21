@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.kcapp.activity.SyFbNiurenActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="#FDFDFD"
+            android:id="@+id/activity_sy_fb_niuren_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_title_height">
+
+            <RelativeLayout
+                android:id="@+id/activity_sy_fb_niuren_back"
+                android:layout_width="@dimen/top_title_height"
+                android:layout_height="@dimen/top_title_height">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/top_title_text_size"
+                android:textColor="#343434"
+                android:textStyle="bold"
+                android:text="发布"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/activity_sy_fb_niuren_sc"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#333333"
+                android:textSize="19sp"
+                android:text="上传"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/activity_sy_fb_niuren_cover"
+            android:layout_height="160dp"
+            android:layout_width="90dp"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/activity_sy_fb_dt_rl_tj"
+            android:orientation="vertical"
+            android:id="@+id/activity_sy_fb_dt_ll_bj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#676767"
+                    android:text="描述"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#989898"
+                    android:layout_marginLeft="20dp"
+                    android:text="点击编辑(可为空)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_sy_fb_niuren_tv_text_num"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="0/500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/activity_sy_fb_niuren_et_content"
+                android:gravity="top"
+                android:textSize="13sp"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:lines="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="#E6E6E6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/activity_sy_fb_niuren_ll_bj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#656565"
+                    android:layout_marginLeft="10dp"
+                    android:text="主题"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/activity_sy_fb_niuren_tv_xuanzezhuti"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#518CD2"
+                    android:text="点击选择主题"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/activity_sy_fb_niuren_rv_zt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

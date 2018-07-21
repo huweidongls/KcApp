@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F4F9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.youth.banner.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_three_header_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#FFFFFF"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv1"
+                android:id="@+id/fragment_three_header_iv1"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv1"
+                android:text="爱音乐"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv2"
+                android:id="@+id/fragment_three_header_iv2"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv2"
+                android:text="爱舞蹈"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv3"
+                android:id="@+id/fragment_three_header_iv3"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv3"
+                android:text="爱升学"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv4"
+                android:id="@+id/fragment_three_header_iv4"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv4"
+                android:text="资格考试"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:background="#FFFFFF"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv5"
+                android:id="@+id/fragment_three_header_iv5"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv5"
+                android:text="爱书画"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv6"
+                android:id="@+id/fragment_three_header_iv6"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv6"
+                android:text="爱生活"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv7"
+                android:id="@+id/fragment_three_header_iv7"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv7"
+                android:text="爱运动"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/three_header_iv8"
+                android:id="@+id/fragment_three_header_iv8"
+                android:layout_width="84dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_three_header_iv8"
+                android:text="更多"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/fragment_three_header_iv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/three_header_iv9" />
+
+        <ImageView
+            android:id="@+id/fragment_three_header_iv10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/three_header_iv10" />
+
+        <ImageView
+            android:id="@+id/fragment_three_header_iv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/three_header_iv11" />
+
+        <ImageView
+            android:id="@+id/fragment_three_header_iv12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/three_header_iv12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_three_header_tv_xianshi"
+                    android:textColor="#343434"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="限时活动"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:textColor="#343434"
+                    android:textSize="17sp"
+                    android:text="生物课高中(第二版)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_three_header_tv_top_jiage"
+                        android:textColor="#F45460"
+                        android:textSize="20sp"
+                        android:text="¥990"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/fragment_three_header_tv_top_zhekou"
+                        android:layout_below="@+id/fragment_three_header_tv_top_jiage"
+                        android:text="¥1200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/fragment_three_header_tv_top_jiage"
+                        android:text="折扣课"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#343434"
+                    android:text="13:20:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/three_header_iv13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="10dp"
+            android:layout_marginLeft="1dp"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fragment_three_header_tv_xianshi1"
+                    android:textColor="#343434"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="限时活动"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:textColor="#343434"
+                    android:textSize="17sp"
+                    android:text="生物课高中(第二版)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fragment_three_header_tv_top_jiage1"
+                        android:textColor="#F45460"
+                        android:textSize="20sp"
+                        android:text="¥990"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/fragment_three_header_tv_top_zhekou1"
+                        android:layout_below="@+id/fragment_three_header_tv_top_jiage1"
+                        android:text="¥1200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/fragment_three_header_tv_top_jiage1"
+                        android:text="折扣课"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textColor="#343434"
+                    android:text="13:20:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/three_header_iv13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="热销课程"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
